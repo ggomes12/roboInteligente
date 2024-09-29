@@ -84,10 +84,12 @@ $ python roboInteligente.py
 ```
 
 ## Interaja com o programa: 
-- Ao iniciar o programa, você será solicitado a inserir o:
+Ao iniciar o programa, você será solicitado a inserir o:
+
 - número de linhas,
 - colunas e a
 - quantidade de obstáculos na matriz.
+  
 O robô então iniciará a simulação, limpando as células disponíveis e exibindo o progresso em tempo real.
 
 ## Exemplo de Uso
