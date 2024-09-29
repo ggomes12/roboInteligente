@@ -94,12 +94,12 @@ O robô então iniciará a simulação, limpando as células disponíveis e exib
 
 ## Exemplo de Uso
 
-- Ao rodar o programa, insira os seguintes valores de exemplo:
+Ao rodar o programa, insira os seguintes valores de exemplo:
 
-    Quantidade de linhas: 10
+- Quantidade de linhas: 10
 
-    Quantidade de colunas: 10
+- Quantidade de colunas: 10
 
-    Quantidade de obstáculos: 20
+- Quantidade de obstáculos: 20
 
-- O robô começará a simulação a partir de uma célula aleatória e limpará toda a matriz, evitando os obstáculos.
+O robô começará a simulação a partir de uma célula aleatória e limpará toda a matriz, evitando os obstáculos.
