@@ -12,7 +12,9 @@ limpas sem passar por obstáculos.
 ## Estrutura do Projeto
 A estrutura do projeto está organizada da seguinte forma:
 
-- Arquivo roboInteligente.py
+- roboInteligente /
+    - roboInteligente.py
+    - REAMDE.md
 
 O arquivo principal do projeto contém a lógica da simulação incluindo a:
 
