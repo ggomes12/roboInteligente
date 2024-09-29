@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
 import time
 
+
 # Gerar matriz
 def gerar_tabela(linhas, colunas, obstaculos):
     total_casas = linhas * colunas
@@ -24,13 +25,16 @@ def gerar_tabela(linhas, colunas, obstaculos):
 
     return matriz
 
+
+
 # Gerar visualização
 def gerar_figura(matriz, titulo="", figura=None, eixos=None):
     if figura is None or eixos is None:
         figura, eixos = plt.subplots()
 
-    cmap = mcolors.ListedColormap(['black', 'brown', 'green', 'blue'])  # 'blue' para células limpas
-    eixos.clear()  # Limpa o gráfico anterior
+    # prepara a vizualização da figura com cores e linhas
+    cmap = mcolors.ListedColormap(['black', 'brown', 'green', 'blue'])  
+    eixos.clear()  
     eixos.imshow(matriz, cmap=cmap)
     
     eixos.set_xticks([x - 0.5 for x in range(1, len(matriz[0]) + 1)])
@@ -43,8 +47,11 @@ def gerar_figura(matriz, titulo="", figura=None, eixos=None):
     plt.title(titulo)
     figura.canvas.draw()
     figura.canvas.flush_events()  # Atualiza a figura em tempo real
+    
+    
+    
 
-# Movimentação do robô com DFS
+# Movimentação do robô com DFS (em profundidade)
 def movimentar_robo(matriz, inicio):
     linhas = len(matriz)
     colunas = len(matriz[0])
@@ -56,7 +63,7 @@ def movimentar_robo(matriz, inicio):
     figura, eixos = plt.subplots()
 
     gerar_figura(matriz, "Início da limpeza", figura, eixos)
-    time.sleep(0.5)  # Pausa para visualizar o início da limpeza
+    time.sleep(0.5)  # Pausa para visualizar alimpeza
 
     while pilha:
         x, y = pilha.pop()  # Pega o último elemento da pilha (busca em profundidade)
@@ -78,6 +85,8 @@ def movimentar_robo(matriz, inicio):
 
     plt.ioff()  # Desabilitar modo interativo
     plt.show()  # Garantir que a última figura permaneça aberta
+    
+    
 
 # Encontrar a posição inicial do robô (onde está o valor 2)
 def encontrar_inicio(matriz):
@@ -87,14 +96,20 @@ def encontrar_inicio(matriz):
                 return (i, j)
     return None
 
+
+
 # Parâmetros
 numero_linhas = int(input("Quantidade de linhas: "))
 numero_colunas = int(input("Quantidade de colunas: "))
 quantidade_obstaculos = int(input("Quantidade de obstáculos: "))
 
+
+
 # Gerar matriz e iniciar simulação
 matriz = gerar_tabela(numero_linhas, numero_colunas, quantidade_obstaculos)
 inicio = encontrar_inicio(matriz)
+
+
 
 if inicio:
     movimentar_robo(matriz, inicio)
