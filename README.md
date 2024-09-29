@@ -32,7 +32,7 @@ Abaixo estão os principais métodos:
     1: Células disponíveis para limpeza
     2: Ponto de início do robô
 
-Parâmetros:
+    Parâmetros:
 
     linhas: Número de linhas da matriz.
     colunas: Número de colunas da matriz.
