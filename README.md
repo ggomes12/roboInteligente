@@ -40,17 +40,23 @@ Abaixo estão os principais métodos:
 
 **gerar_figura(matriz, titulo="", figura=None, eixos=None)**
 
-    Este método utiliza a biblioteca matplotlib para gerar uma visualização gráfica da matriz em tempo real, com diferentes cores para células limpas, disponíveis e obstáculos. O progresso do robô é exibido conforme ele limpa as células.
+    Este método utiliza a biblioteca matplotlib para gerar uma visualização gráfica da matriz em tempo real, 
+    com diferentes cores para células limpas, disponíveis e obstáculos. O progresso do robô é exibido 
+    conforme ele limpa as células.
 
 **movimentar_robo(matriz, inicio)**
 
-    Este método realiza a movimentação do robô utilizando o algoritmo de busca em profundidade (DFS). O robô começa a partir do ponto inicial (valor 2 na matriz) e se move em sequência, limpando uma célula de cada vez. Se encontrar um obstáculo ou o fim de uma linha, ele continua a busca em outras direções.
+    Este método realiza a movimentação do robô utilizando o algoritmo de busca em profundidade (DFS). 
+    O robô começa a partir do ponto inicial (valor 2 na matriz) e se move em sequência, limpando uma 
+    célula de cada vez. Se encontrar um obstáculo ou o fim de uma linha, ele continua a busca em outras direções.
 
-    A movimentação é restrita a quatro direções: frente, trás, esquerda e direita. O robô limpa uma célula por vez e usa as células já limpas para continuar a busca por áreas disponíveis.
+    A movimentação é restrita a quatro direções: frente, trás, esquerda e direita. O robô limpa uma 
+    célula por vez e usa as células já limpas para continuar a busca por áreas disponíveis.
 
 **encontrar_inicio(matriz)**
 
-    Este método encontra a posição inicial do robô, ou seja, a célula que contém o valor 2. Ele retorna as coordenadas (x, y) dessa posição na matriz.
+    Este método encontra a posição inicial do robô, ou seja, a célula que contém o valor 2. 
+    Ele retorna as coordenadas (x, y) dessa posição na matriz.
     
 **Como Executar**
 
@@ -64,7 +70,8 @@ $ git clone https://github.com/ggomes12 roboInteligente.git
 
 
 ## Instale as dependências: 
-- Este projeto utiliza a biblioteca matplotlib para visualização gráfica e random para gerar os obstáculos. Instale o matplotlib com o comando:
+- Este projeto utiliza a biblioteca matplotlib para visualização gráfica e random para gerar os obstáculos.
+  Instale o matplotlib com o comando:
 
 ```
 $ pip install matplotlib
@@ -77,7 +84,10 @@ $ python roboInteligente.py
 ```
 
 ## Interaja com o programa: 
-- Ao iniciar o programa, você será solicitado a inserir o número de linhas, colunas e a quantidade de obstáculos na matriz.
+- Ao iniciar o programa, você será solicitado a inserir o:
+- número de linhas,
+- colunas e a
+- quantidade de obstáculos na matriz.
 O robô então iniciará a simulação, limpando as células disponíveis e exibindo o progresso em tempo real.
 
 ## Exemplo de Uso
