@@ -67,7 +67,7 @@ Abaixo estão os principais métodos:
 - Clone o repositório:
 
 ```
-$ git clone https://github.com/ggomes12 roboInteligente.git
+$ git clone https://github.com/ggomes12/roboInteligente.git
 ```
 
 
