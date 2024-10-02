@@ -105,3 +105,23 @@ Ao rodar o programa, insira os seguintes valores de exemplo:
 - Quantidade de obstáculos: 20
 
 O robô começará a simulação a partir de uma célula aleatória e limpará toda a matriz, evitando os obstáculos.
+
+
+_________________________________________________________________________
+
+## Testes Visuais
+
+### 1. Chamada da aplicação
+![Foto 1 - Chamada da aplicação](images/chamada.png)
+
+### 2. Início da simulação
+![Foto 2 - Início da simulação](images/inicio.png)
+
+### 3. Meio da simulação
+![Foto 3 - Meio da simulação](images/meio.png)
+
+### 4. Fim da simulação
+![Foto 4 - Fim da simulação](images/fim.png)
+
+
+Obs: Como observado, quadrados permanecem "sujos" ao final da simulação, pois os obstáculos impedem que o robô limpe essas células. Devido à sua incapacidade de "enxergar" na diagonal, o robô não pode acessar certas áreas isoladas pelos obstáculos.
