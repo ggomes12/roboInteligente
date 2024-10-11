@@ -22,7 +22,10 @@ O arquivo principal do projeto contém a lógica da simulação incluindo a:
 
     - movimentação do robô,
 
-    - visualização do progresso da limpeza. 
+    - visualização do progresso da limpeza, 
+
+    - visualização do local de limpeza.
+
 
 Abaixo estão os principais métodos:
 
